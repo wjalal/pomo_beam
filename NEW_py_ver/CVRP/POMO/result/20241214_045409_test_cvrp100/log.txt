@@ -1,0 +1,14 @@
+[2024-12-14 01:54:10] test_n100.py(108) : DEBUG_MODE: False
+[2024-12-14 01:54:10] test_n100.py(109) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2024-12-14 01:54:10] test_n100.py(110) : env_params{'problem_size': 100, 'pomo_size': 100}
+[2024-12-14 01:54:10] test_n100.py(110) : model_params{'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'encoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'logit_clipping': 10, 'ff_hidden_dim': 512, 'eval_type': 'gumbel', 'tau': 0.3, 'k': 5, 'max_steps': 100, 'beam_size': 5}
+[2024-12-14 01:54:10] test_n100.py(110) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'model_load': {'path': './result/saved_CVRP100_model', 'epoch': 30500}, 'test_episodes': 10000, 'test_batch_size': 400, 'augmentation_enable': True, 'aug_factor': 8, 'aug_batch_size': 400, 'test_data_load': {'enable': True, 'filename': '../vrp100_test_seed1234.pt'}}
+[2024-12-14 01:54:10] test_n100.py(110) : logger_params{'log_file': {'desc': 'test_cvrp100', 'filename': 'log.txt', 'filepath': './result/20241214_045409_test_cvrp100'}}
+[2024-12-14 01:54:22] CVRPTester.py(82) : episode 400/10000, Elapsed[0.20m], Remain[4.72m], score:15.923, aug_score:15.838
+[2024-12-14 01:54:36] CVRPTester.py(82) : episode 800/10000, Elapsed[0.42m], Remain[4.84m], score:15.778, aug_score:15.696
+[2024-12-14 01:54:54] CVRPTester.py(82) : episode 1200/10000, Elapsed[0.73m], Remain[5.32m], score:15.895, aug_score:15.812
+[2024-12-14 01:55:06] CVRPTester.py(82) : episode 1600/10000, Elapsed[0.93m], Remain[4.90m], score:15.764, aug_score:15.690
+[2024-12-14 01:55:20] CVRPTester.py(82) : episode 2000/10000, Elapsed[1.16m], Remain[4.62m], score:15.769, aug_score:15.687
+[2024-12-14 01:55:31] CVRPTester.py(82) : episode 2400/10000, Elapsed[1.34m], Remain[4.24m], score:15.715, aug_score:15.635
+[2024-12-14 01:55:43] CVRPTester.py(82) : episode 2800/10000, Elapsed[1.55m], Remain[3.97m], score:15.793, aug_score:15.704
+[2024-12-14 01:55:55] CVRPTester.py(82) : episode 3200/10000, Elapsed[1.74m], Remain[3.70m], score:15.793, aug_score:15.711

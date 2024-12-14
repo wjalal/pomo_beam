@@ -1,0 +1,11 @@
+[2024-12-13 22:35:40] test_n100.py(105) : DEBUG_MODE: False
+[2024-12-13 22:35:40] test_n100.py(106) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2024-12-13 22:35:40] test_n100.py(107) : env_params{'problem_size': 100, 'pomo_size': 100}
+[2024-12-13 22:35:40] test_n100.py(107) : model_params{'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'encoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'logit_clipping': 10, 'ff_hidden_dim': 512, 'eval_type': 'epsilon', 'tau': 0.5}
+[2024-12-13 22:35:40] test_n100.py(107) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'model_load': {'path': './result/saved_CVRP100_model', 'epoch': 30500}, 'test_episodes': 10000, 'test_batch_size': 400, 'augmentation_enable': True, 'aug_factor': 8, 'aug_batch_size': 400, 'test_data_load': {'enable': True, 'filename': '../vrp100_test_seed1234.pt'}}
+[2024-12-13 22:35:40] test_n100.py(107) : logger_params{'log_file': {'desc': 'test_cvrp100', 'filename': 'log.txt', 'filepath': './result/20241214_013538_test_cvrp100'}}
+[2024-12-13 22:35:47] CVRPTester.py(82) : episode 400/10000, Elapsed[0.12m], Remain[3.00m], score:15.944, aug_score:15.854
+[2024-12-13 22:35:55] CVRPTester.py(82) : episode 800/10000, Elapsed[0.25m], Remain[2.86m], score:15.795, aug_score:15.710
+[2024-12-13 22:36:02] CVRPTester.py(82) : episode 1200/10000, Elapsed[0.37m], Remain[2.74m], score:15.911, aug_score:15.828
+[2024-12-13 22:36:10] CVRPTester.py(82) : episode 1600/10000, Elapsed[0.50m], Remain[2.61m], score:15.779, aug_score:15.704
+[2024-12-13 22:36:17] CVRPTester.py(82) : episode 2000/10000, Elapsed[0.62m], Remain[2.48m], score:15.781, aug_score:15.700

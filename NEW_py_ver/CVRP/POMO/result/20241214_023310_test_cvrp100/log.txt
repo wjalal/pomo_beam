@@ -1,0 +1,34 @@
+[2024-12-13 23:33:11] test_n100.py(105) : DEBUG_MODE: False
+[2024-12-13 23:33:11] test_n100.py(106) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2024-12-13 23:33:11] test_n100.py(107) : env_params{'problem_size': 100, 'pomo_size': 100}
+[2024-12-13 23:33:11] test_n100.py(107) : model_params{'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'encoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'logit_clipping': 10, 'ff_hidden_dim': 512, 'eval_type': 'gumbel', 'tau': 0.5}
+[2024-12-13 23:33:11] test_n100.py(107) : tester_params{'use_cuda': True, 'cuda_device_num': 0, 'model_load': {'path': './result/saved_CVRP100_model', 'epoch': 30500}, 'test_episodes': 10000, 'test_batch_size': 400, 'augmentation_enable': True, 'aug_factor': 8, 'aug_batch_size': 400, 'test_data_load': {'enable': True, 'filename': '../vrp100_test_seed1234.pt'}}
+[2024-12-13 23:33:11] test_n100.py(107) : logger_params{'log_file': {'desc': 'test_cvrp100', 'filename': 'log.txt', 'filepath': './result/20241214_023310_test_cvrp100'}}
+[2024-12-13 23:33:20] CVRPTester.py(82) : episode 400/10000, Elapsed[0.15m], Remain[3.58m], score:15.929, aug_score:15.841
+[2024-12-13 23:33:29] CVRPTester.py(82) : episode 800/10000, Elapsed[0.29m], Remain[3.35m], score:15.776, aug_score:15.696
+[2024-12-13 23:33:38] CVRPTester.py(82) : episode 1200/10000, Elapsed[0.44m], Remain[3.19m], score:15.893, aug_score:15.814
+[2024-12-13 23:33:46] CVRPTester.py(82) : episode 1600/10000, Elapsed[0.58m], Remain[3.04m], score:15.768, aug_score:15.692
+[2024-12-13 23:33:55] CVRPTester.py(82) : episode 2000/10000, Elapsed[0.72m], Remain[2.89m], score:15.773, aug_score:15.688
+[2024-12-13 23:34:03] CVRPTester.py(82) : episode 2400/10000, Elapsed[0.87m], Remain[2.75m], score:15.718, aug_score:15.636
+[2024-12-13 23:34:12] CVRPTester.py(82) : episode 2800/10000, Elapsed[1.01m], Remain[2.60m], score:15.793, aug_score:15.706
+[2024-12-13 23:34:21] CVRPTester.py(82) : episode 3200/10000, Elapsed[1.16m], Remain[2.46m], score:15.793, aug_score:15.711
+[2024-12-13 23:34:30] CVRPTester.py(82) : episode 3600/10000, Elapsed[1.31m], Remain[2.33m], score:15.812, aug_score:15.729
+[2024-12-13 23:34:39] CVRPTester.py(82) : episode 4000/10000, Elapsed[1.46m], Remain[2.18m], score:15.786, aug_score:15.705
+[2024-12-13 23:34:47] CVRPTester.py(82) : episode 4400/10000, Elapsed[1.60m], Remain[2.03m], score:15.946, aug_score:15.863
+[2024-12-13 23:34:56] CVRPTester.py(82) : episode 4800/10000, Elapsed[1.74m], Remain[1.89m], score:15.779, aug_score:15.691
+[2024-12-13 23:35:05] CVRPTester.py(82) : episode 5200/10000, Elapsed[1.89m], Remain[1.74m], score:15.753, aug_score:15.666
+[2024-12-13 23:35:14] CVRPTester.py(82) : episode 5600/10000, Elapsed[2.04m], Remain[1.60m], score:15.895, aug_score:15.809
+[2024-12-13 23:35:22] CVRPTester.py(82) : episode 6000/10000, Elapsed[2.18m], Remain[1.45m], score:15.761, aug_score:15.682
+[2024-12-13 23:35:31] CVRPTester.py(82) : episode 6400/10000, Elapsed[2.33m], Remain[1.31m], score:15.946, aug_score:15.866
+[2024-12-13 23:35:40] CVRPTester.py(82) : episode 6800/10000, Elapsed[2.47m], Remain[1.16m], score:15.791, aug_score:15.707
+[2024-12-13 23:35:48] CVRPTester.py(82) : episode 7200/10000, Elapsed[2.61m], Remain[1.02m], score:15.952, aug_score:15.867
+[2024-12-13 23:35:57] CVRPTester.py(82) : episode 7600/10000, Elapsed[2.75m], Remain[0.87m], score:15.674, aug_score:15.589
+[2024-12-13 23:36:05] CVRPTester.py(82) : episode 8000/10000, Elapsed[2.89m], Remain[0.72m], score:15.784, aug_score:15.703
+[2024-12-13 23:36:13] CVRPTester.py(82) : episode 8400/10000, Elapsed[3.03m], Remain[0.58m], score:15.909, aug_score:15.823
+[2024-12-13 23:36:22] CVRPTester.py(82) : episode 8800/10000, Elapsed[3.18m], Remain[0.43m], score:15.678, aug_score:15.592
+[2024-12-13 23:36:30] CVRPTester.py(82) : episode 9200/10000, Elapsed[3.32m], Remain[0.29m], score:15.776, aug_score:15.694
+[2024-12-13 23:36:39] CVRPTester.py(82) : episode 9600/10000, Elapsed[3.46m], Remain[0.14m], score:16.030, aug_score:15.943
+[2024-12-13 23:36:48] CVRPTester.py(82) : episode 10000/10000, Elapsed[3.60m], Remain[0.00m], score:15.905, aug_score:15.823
+[2024-12-13 23:36:48] CVRPTester.py(88) :  *** Test Done *** 
+[2024-12-13 23:36:48] CVRPTester.py(89) :  NO-AUG SCORE: 15.8248 
+[2024-12-13 23:36:48] CVRPTester.py(90) :  AUGMENTATION SCORE: 15.7414 

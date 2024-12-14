@@ -1,0 +1,24 @@
+[2024-12-13 17:18:41] train_n100.py(123) : DEBUG_MODE: False
+[2024-12-13 17:18:41] train_n100.py(124) : USE_CUDA: True, CUDA_DEVICE_NUM: 0
+[2024-12-13 17:18:41] train_n100.py(125) : env_params{'problem_size': 100, 'pomo_size': 100}
+[2024-12-13 17:18:41] train_n100.py(125) : model_params{'embedding_dim': 128, 'sqrt_embedding_dim': 11.313708498984761, 'encoder_layer_num': 6, 'qkv_dim': 16, 'head_num': 8, 'logit_clipping': 10, 'ff_hidden_dim': 512, 'eval_type': 'argmax'}
+[2024-12-13 17:18:41] train_n100.py(125) : optimizer_params{'optimizer': {'lr': 0.0001, 'weight_decay': 1e-06}, 'scheduler': {'milestones': [8001, 8051], 'gamma': 0.1}}
+[2024-12-13 17:18:41] train_n100.py(125) : trainer_params{'use_cuda': True, 'cuda_device_num': 0, 'epochs': 8100, 'train_episodes': 10000, 'train_batch_size': 64, 'prev_model_path': None, 'logging': {'model_save_interval': 500, 'img_save_interval': 500, 'log_image_params_1': {'json_foldername': 'log_image_style', 'filename': 'style_cvrp_100.json'}, 'log_image_params_2': {'json_foldername': 'log_image_style', 'filename': 'style_loss_1.json'}}, 'model_load': {'enable': False}}
+[2024-12-13 17:18:41] train_n100.py(125) : logger_params{'log_file': {'desc': 'train_cvrp_n100_with_instNorm', 'filename': 'run_log', 'filepath': './result/20241213_201840_train_cvrp_n100_with_instNorm'}}
+[2024-12-13 17:18:42] CVRPTrainer.py(68) : =================================================================
+[2024-12-13 17:18:43] CVRPTrainer.py(147) : Epoch   1: Train  64/10000(0.6%)  Score: 52.1920,  Loss: -5.4451
+[2024-12-13 17:18:44] CVRPTrainer.py(147) : Epoch   1: Train 128/10000(1.3%)  Score: 47.0405,  Loss: -6.8333
+[2024-12-13 17:18:44] CVRPTrainer.py(147) : Epoch   1: Train 192/10000(1.9%)  Score: 43.2707,  Loss: -7.8777
+[2024-12-13 17:18:45] CVRPTrainer.py(147) : Epoch   1: Train 256/10000(2.6%)  Score: 40.2768,  Loss: -8.5410
+[2024-12-13 17:18:45] CVRPTrainer.py(147) : Epoch   1: Train 320/10000(3.2%)  Score: 38.1248,  Loss: -8.6787
+[2024-12-13 17:18:46] CVRPTrainer.py(147) : Epoch   1: Train 384/10000(3.8%)  Score: 36.3218,  Loss: -8.5928
+[2024-12-13 17:18:46] CVRPTrainer.py(147) : Epoch   1: Train 448/10000(4.5%)  Score: 35.0001,  Loss: -8.4363
+[2024-12-13 17:18:47] CVRPTrainer.py(147) : Epoch   1: Train 512/10000(5.1%)  Score: 33.9277,  Loss: -8.2218
+[2024-12-13 17:18:47] CVRPTrainer.py(147) : Epoch   1: Train 576/10000(5.8%)  Score: 33.1318,  Loss: -8.0067
+[2024-12-13 17:18:48] CVRPTrainer.py(147) : Epoch   1: Train 640/10000(6.4%)  Score: 32.4567,  Loss: -7.7638
+[2024-12-13 17:20:00] CVRPTrainer.py(152) : Epoch   1: Train (100%)  Score: 22.0389,  Loss: -4.5662
+[2024-12-13 17:20:00] CVRPTrainer.py(82) : Epoch   1/8100: Time Est.: Elapsed[1.30m], Remain[175.88h]
+[2024-12-13 17:20:00] CVRPTrainer.py(68) : =================================================================
+[2024-12-13 17:21:19] CVRPTrainer.py(152) : Epoch   2: Train (100%)  Score: 19.2510,  Loss: -3.5723
+[2024-12-13 17:21:19] CVRPTrainer.py(82) : Epoch   2/8100: Time Est.: Elapsed[2.61m], Remain[176.35h]
+[2024-12-13 17:21:19] CVRPTrainer.py(91) : Saving log_image
