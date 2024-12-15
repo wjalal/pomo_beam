@@ -51,9 +51,8 @@ class CVRPTester:
 
         # utility
         self.time_estimator = TimeEstimator()
-        self.csv_file = os.path.join(os.getcwd(), 'test_results_beam_size4.csv')
+        self.csv_file = os.path.join(self.result_folder, 'test_results_beam_size1.csv')
         self.csv_writer = None
-
     def run(self):
         self.time_estimator.reset()
 

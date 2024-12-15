@@ -6,7 +6,7 @@ from logging import getLogger
 
 from CVRPEnv import CVRPEnv as Env
 from CVRPModel import CVRPModel as Model
-import csv
+
 from utils.utils import *
 import copy
 import gc
@@ -51,8 +51,6 @@ class CVRPTester:
 
         # utility
         self.time_estimator = TimeEstimator()
-        self.csv_file = os.path.join(os.getcwd(), 'test_results_beam_size4.csv')
-        self.csv_writer = None
 
     def run(self):
         self.time_estimator.reset()
@@ -65,12 +63,6 @@ class CVRPTester:
 
         test_num_episode = self.tester_params['test_episodes']
         episode = 0
-
-        if not os.path.exists(self.csv_file):
-            with open(self.csv_file, mode='w', newline='') as f:
-                self.csv_writer = csv.writer(f)
-                self.csv_writer.writerow(['episode', 'reward', 'aug_reward'])  # Write header
-
 
         while episode < test_num_episode:
 
@@ -90,10 +82,6 @@ class CVRPTester:
             elapsed_time_str, remain_time_str = self.time_estimator.get_est_string(episode, test_num_episode)
             self.logger.info("episode {:3d}/{:3d}, Elapsed[{}], Remain[{}], score:{:.3f}, aug_score:{:.3f}".format(
                 episode, test_num_episode, elapsed_time_str, remain_time_str, score, aug_score))
-
-            with open(self.csv_file, mode='a', newline='') as f:
-                self.csv_writer = csv.writer(f)
-                self.csv_writer.writerow([episode, score, aug_score])
 
             all_done = (episode == test_num_episode)
 
@@ -122,8 +110,6 @@ class CVRPTester:
 
         # POMO Rollout
         ###############################################
-            gc.collect()
-            torch.cuda.empty_cache()
 
             _, reward, done = self.env.pre_step()
             i = 0
